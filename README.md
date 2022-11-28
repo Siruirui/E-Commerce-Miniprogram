@@ -1,9 +1,9 @@
 # E-Commerce-Miniprogram
 电子商务小程序——饮料点单
-饮品类电商平台小程序，仅供学习使用。
+电商平台点单小程序，仅供学习使用。
 
 本repo只含微信小程序前端，需要配合后端使用。
-也可以搭配我的后端项目使用，移步[E-Commerce-Miniprogram-Server](https://github.com/Siruirui/E-Commerce-Miniprogram-Server)。
+推荐搭配我的后端项目使用，移步[E-Commerce-Miniprogram-Server](https://github.com/Siruirui/E-Commerce-Miniprogram-Server)。
 请求端口默认为localhost的8080端口，如需修改请直接在util.js中修改domain值。
 
 - 存在问题：
