@@ -1,0 +1,37 @@
+/* pages/cart/cart.wxss */
+
+.van-swipe-cell__left, .van-swipe-cell__right{
+  display: inline-block;
+  width: 140rpx;
+  height: 270rpx;
+  font-size: 30rpx;
+  line-height: 270rpx;
+  color: #fff;
+  text-align: center;
+  background-color: #f44;
+}
+
+#product-list{
+  margin-bottom: 100rpx;
+}
+
+.bar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding-left: 20rpx;
+  margin: 10rpx;
+  border-radius: 25rpx;
+}
+
+.van-card{
+  background-color: #ffffff !important;
+  border-radius: 25rpx;
+  padding-top: 40rpx !important;
+}
+
+van-card{
+  flex-grow: 1;
+}

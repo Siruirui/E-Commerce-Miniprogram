@@ -1,0 +1,26 @@
+<!--pages/order/order.wxml-->
+<view class="order-list" wx:for="{{order}}" wx:key="id">
+  <view class="header">
+    <view class="order-statu" wx:if="{{item.statu==1}}">已完成</view>
+    <view class="order-statu" wx:elif="{{item.statu==0}}">待支付</view>
+    <view class="order-statu" wx:elif="{{item.statu==-1}}">已取消</view>
+    <view class="order-statu" wx:else>订单异常</view>
+  </view>
+  <van-card num="{{item.count}}" price="{{item.price}}" desc="{{item.desc}}" title="{{item.title}}" thumb="{{item.picurl}}" thumb-link="../odetail/odetail?id={{item.id}}">
+    <view slot="footer" class="footer">
+      <view wx:if="{{item.statu==1}}">实付款<text class="pay">￥{{item.total_price}}</text></view>
+      <view wx:elif="{{item.statu==0}}">待付款<text class="pay">￥{{item.total_price}}</text></view>
+      <view wx:else></view>
+      <view>
+        <button size="mini" class="orderBtn" bindtap="deleteOrder" data-id="{{item.id}}">删除订单</button>
+        <button size="mini" class="orderBtn" bindtap="addToCart" data-id="{{item.product_id}}">加入购物车</button>
+        <button size="mini" class="orderBtn" wx:if="{{item.statu==1}}">评价</button>
+        <button size="mini" class="orderBtn" wx:elif="{{item.statu==0}}">去付款</button>
+        <view wx:elif="{{item.statu==-1}}"></view>
+        <button size="mini" class="orderBtn" wx:else>查看详情</button>
+      </view>
+    </view>
+  </van-card>
+</view>
+
+<van-empty wx:if="{{!order.length}}" image="search" description="还没有购买记录哦" />

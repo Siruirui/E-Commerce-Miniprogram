@@ -1,0 +1,9 @@
+<!--pages/usercenter/usercenter.wxml-->
+<view class="avatar-area">
+  <image class="avatar" src="{{avatarUrl}}"></image>
+</view>
+<form bindsubmit="setNickName">
+  <label><text>昵称</text>
+  <input type="nickname" class="nickname" name="nickname" placeholder="请输入昵称"/>{{userInfo.nickName}}</label>
+  <button class="btn" type="" form-type="submit" style="height: 80rpx; width: 240rpx;">确认修改</button>
+</form>

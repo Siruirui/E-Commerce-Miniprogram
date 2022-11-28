@@ -1,0 +1,12 @@
+/* pages/cservice/cservice.wxss */
+.title{
+  font-size: 60rpx;
+  font-weight: bold;
+  color: #9999ff;
+  margin-bottom: 40rpx;
+}
+
+.content{
+  font-size: 40rpx;
+  font-weight: bold;
+}

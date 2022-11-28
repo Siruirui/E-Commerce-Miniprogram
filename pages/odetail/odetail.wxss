@@ -1,0 +1,5 @@
+/* pages/odetail/odetail.wxss */
+.poster{
+  width: 100%;
+  height: 600rpx;
+}

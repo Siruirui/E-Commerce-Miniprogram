@@ -1,0 +1,39 @@
+<!--pages/user/user.wxml-->
+<view class="userinfo">
+  <block wx:if="{{isLogin}}">
+    <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar" style="width: 160rpx; height: 160rpx; margin: 40rpx;">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="aspectFill"></image>
+    </button>
+    <view class="userinfo-detail">
+      <text type="nickname" class="userinfo-nickname" style="width: 300rpx;">{{userInfo.nickName}}</text>
+      <view class="balance">
+        <text>余额：{{balance}}</text>
+        <view class="charge" bindtap="goToCharge">充值</view>
+      </view>
+    </view>
+    <view class="usercenter" bindtap="goToUserCenter">
+      <text class="usercenter-text">个人中心</text>
+      <image class="usercenter-pic" src="/images/my/arrow.png"></image>
+    </view>
+  </block>
+  <block wx:else>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="aspectFill" style="margin: 40rpx" bindtap="tapLogin"></image>
+    <view class="login" bindtap="tapLogin">点击登录</view>
+  </block>
+</view>
+
+<view class="list-panel">
+  <view class="list-item" bindtap="goToOrder"><image src="/images/my/order.png"></image><text>我的订单</text><image src="/images/my/arrow.png"></image></view>
+  <view class="list-item" bindtap="goToSetting"><image src="/images/my/order.png"></image><text>系统设置</text><image src="/images/my/arrow.png"></image></view>
+  <view class="list-item" bindtap="goToAbout"><image src="/images/my/order.png"></image><text>关于我们</text><image src="/images/my/arrow.png"></image></view>
+</view>
+
+<!-- <van-cell-group inset>
+  <van-cell title="我的订单" icon="orders-o" size="large" is-link />
+  <van-cell title="我的收藏" icon="like-o" size="large" is-link />
+  <van-cell title="系统设置" icon="setting-o" size="large" is-link />
+  <van-cell title="关于我们" icon="miniprogram-o" size="large" is-link />
+</van-cell-group> -->
+
+<button wx:if="{{isLogin}}" type="warn" bindtap="tapLogout" style="margin-top: 180rpx;">退出登录</button>
+

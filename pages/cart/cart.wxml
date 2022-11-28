@@ -1,0 +1,24 @@
+<!--pages/cart/cart.wxml-->
+<view id="product-list">
+  <block wx:for="{{products}}" wx:key="product_id">
+    <van-swipe-cell right-width="{{70}}" async-close bind:close="deleteProduct" data-id="{{item.product_id}}">
+      <view class="bar">
+        <van-checkbox value="{{item.selected==1}}" bind:change="changeSelect" data-id="{{item.product_id}}"></van-checkbox>
+        <van-card tag="{{item.tag}}" price="{{item.price}}" desc="{{item.desc}}" title="{{item.title}}" thumb="{{item.picurl}}" thumb-link="../detail/detail?id={{item.product_id}}">
+          <view slot="footer">
+            <van-stepper data-id="{{item.product_id}}" value="{{item.count}}" async-change bind:change="setCount" />
+          </view>
+        </van-card>
+      </view>
+      <view slot="right">删除</view>
+    </van-swipe-cell>
+  </block>
+
+  <block wx:if="{{!products.length}}">
+    <van-empty image="search" description="购物车中尚无商品" />
+  </block>
+</view>
+
+<van-submit-bar wx:if="{{products.length}}" price="{{price}}" button-text="提交订单" bind:submit="purchase" loading="{{loading}}">
+  <van-checkbox value="{{selectedAll}}" bind:change="changeSelect" data-id="all">全选</van-checkbox>
+</van-submit-bar>

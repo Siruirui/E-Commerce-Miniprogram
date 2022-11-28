@@ -1,0 +1,10 @@
+<!--pages/charge/charge.wxml-->
+<view class="container">
+  <form class="charge" bindsubmit="charge">
+    <text>当前余额：{{balance}} 元</text>
+    <label>
+      <input name="amount" placeholder="请输入充值金额" type="number" />
+      <button class="chargeBtn" form-type="submit" style="height: 60rpx; width: 180rpx;">充值</button>
+    </label>
+  </form>
+</view>

@@ -1,0 +1,5 @@
+<!--pages/cservice/cservice.wxml-->
+<view class="container">
+<text class="title">客服QQ</text>
+<text class="content">843991410</text>
+</view>

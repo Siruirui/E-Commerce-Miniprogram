@@ -1,0 +1,9 @@
+/* pages/detail/detail.wxss */
+.poster{
+  width: 100%;
+  height: 600rpx;
+}
+
+button{
+  width: 100% !important;
+}

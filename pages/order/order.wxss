@@ -1,0 +1,42 @@
+/* pages/order/order.wxss */
+
+.order-list{
+  border-radius: 25rpx;
+  margin: 10rpx;
+  padding-top: 20rpx;
+  background-color: #ffffff;
+}
+
+.van-card{
+  background-color: #ffffff !important;
+  border-radius: 25rpx;
+}
+
+.purchase-time{
+  padding: 0 32rpx;
+  font-size: small;
+}
+
+.order-statu{
+  text-align: right;
+  color: red;
+  padding: 0 32rpx;
+  font-size: small;
+}
+
+.orderBtn{
+  font-size: small !important;
+  font-weight: normal !important;
+  width: 175rpx !important;
+  border: 1px solid #cccccc;
+  border-radius: 14px;
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+  background-color: #ffffff;
+}
+
+.pay{
+  color: red;
+  font-size: small;
+  font-weight: bold;
+}

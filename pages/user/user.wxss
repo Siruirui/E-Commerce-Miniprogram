@@ -1,0 +1,102 @@
+/* pages/user/user.wxss */
+
+.userinfo {
+  height: 240rpx;
+  display: flex;
+  align-items: center;
+  margin-top: 40rpx;
+}
+
+.avatar-wrapper{
+  padding: 0px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px 2px #cccccc;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px 2px #cccccc;
+}
+
+.userinfo-detail{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.userinfo-nickname{
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 10rpx;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.balance{
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+  line-height: 40rpx;
+}
+
+.charge{
+  height: 40rpx;
+  width: 80rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  background-color: #9999ff;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.usercenter{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: right;
+  margin-right: 40rpx;
+}
+
+.usercenter-text{
+  line-height: 40rpx;
+}
+
+.usercenter-pic{
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.login{
+  line-height: 80rpx;
+  font-weight: bold;
+  font-size: large;
+}
+
+.list-panel{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20rpx;
+  margin: 40rpx 20rpx;
+}
+
+.list-item{
+  height: 120rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-item image{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 10rpx 20rpx;
+}
+
+.list-item text{
+  flex-grow: 1;
+}

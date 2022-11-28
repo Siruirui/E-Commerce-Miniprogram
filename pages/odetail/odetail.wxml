@@ -1,0 +1,13 @@
+<!--pages/odetail/odetail.wxml-->
+<image class="poster" mode="aspectFit" src="{{order.picurl}}"></image>
+
+<van-cell-group>
+  <van-cell title="名称" size="large" value="{{order.title}}" />
+  <van-cell title="价格" size="large" value="{{order.price}}" />
+  <van-cell title="数量" size="large" value="{{order.count}}" />
+  <van-cell title="总价" size="large" value="{{order.total_price}}" />
+  <van-cell title="实付款" size="large" value="{{order.total_price}}" />
+  <van-cell title="订单编号" size="large" value="{{order.order_id}}" />
+  <van-cell title="购买时间" size="large" value="{{order.purchase_time}}" />
+</van-cell-group>
+

@@ -1,0 +1,16 @@
+<!--pages/detail/detail.wxml-->
+<image class="poster" mode="aspectFit" src="{{product.picurl}}"></image>
+
+<van-cell-group>
+  <van-cell title="名称" size="large" value="{{product.title}}" />
+  <van-cell title="分类" size="large" value="{{product.tag}}" />
+  <van-cell title="价格" size="large" value="{{product.price}}" />
+</van-cell-group>
+
+<van-goods-action>
+  <van-goods-action-icon icon="service-o" text="客服" bind:click="goToService" />
+  <van-goods-action-icon icon="shop-o" text="店铺" bind:click="goToHome" />
+  <van-goods-action-icon icon="cart-o" text="购物车" bind:click="goToCart" />
+  <van-goods-action-button text="加入购物车" type="warning" bind:click="addToCart" />
+  <van-goods-action-button text="立即购买" bind:click="purchaseItem" />
+</van-goods-action>
