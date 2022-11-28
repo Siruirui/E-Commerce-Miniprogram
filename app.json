@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/user/user",
+    "pages/cart/cart",
+    "pages/detail/detail",
+    "pages/cservice/cservice",
+    "pages/order/order",
+    "pages/usercenter/usercenter",
+    "pages/charge/charge",
+    "pages/odetail/odetail",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#6666cc",
+    "navigationBarTitleText": "思睿甜品站",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#13227a",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "images/tabBar/home.png",
+      "selectedIconPath": "images/tabBar/home_blue.png"
+    },
+    {
+      "pagePath": "pages/cart/cart",
+      "text": "购物车",
+      "iconPath": "images/tabBar/cart.png",
+      "selectedIconPath": "images/tabBar/cart_blue.png"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "images/tabBar/my.png",
+      "selectedIconPath": "images/tabBar/my_blue.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
